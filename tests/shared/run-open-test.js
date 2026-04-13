@@ -19,8 +19,15 @@ function loadAnswer(exerciseDir) {
 
   const jsPath = path.join(exerciseDir, "app.js");
   if (fs.existsSync(jsPath)) {
+    try {
+      delete require.cache[require.resolve(jsPath)];
+      const exported = require(jsPath);
+      if (typeof exported === "string" && exported.trim()) return exported.trim();
+    } catch (error) {
+      // Fall back to text extraction if the module cannot be loaded.
+    }
+
     const js = fs.readFileSync(jsPath, "utf8");
-    // Prefer the actual exercise payload instead of any template in comments.
     const template = js.match(/(?:^|\r?\n)\s*const\s+answer\s*=\s*`([\s\S]*?)`\s*;?/);
     if (template && template[1] && template[1].trim()) return template[1].trim();
     const extracted = extractMermaidFromMarkdown(js);
