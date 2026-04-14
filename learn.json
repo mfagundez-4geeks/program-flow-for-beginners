@@ -1,72 +1,37 @@
 {
-  "slug": "program-flow-for-beginners",
-  "duration": 4,
-  "difficulty": "easy",
-  "title": {
-    "us": "Program Flow for Beginners",
-    "es": "Flujo de Programacion para Principiantes"
-  },
-  "description": {
-    "us": "10 Mermaid-based flow exercises to practice core programming logic with isolated auto-evaluation and progressive difficulty.",
-    "es": "10 ejercicios de flujo basados en Mermaid para practicar la logica esencial de programacion con autoevaluacion aislada y dificultad progresiva."
-  },
-  "projectType": "tutorial",
-  "template_url": "self",
-  "autoPlay": true,
-  "technologies": [
-    "programming logic",
-    "control flow",
-    "if else",
-    "loops",
-    "flowcharts",
-    "mermaid"
-  ],
-  "videoSolutions": false,
-  "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
-  "graded": true,
-  "grading": "isolated",
-  "localhostOnly": true,
-  "editor": {
-    "version": "5.0",
-    "agent": "vscode",
-    "mode": "extension"
-  },
-  "entries": {
-    "node": "app.js"
-  },
-  "delivery": {
-    "formats": [
-      "no_delivery"
-    ]
-  },
-  "translations": [
-    "es",
-    "en"
-  ],
-  "talents": [
-    {
-      "badge": "html-developer",
-      "points": 6
+    "slug": "programming-flow-for-beginners",
+    "title": {
+        "us": "Program Flow for Beginners",
+        "es": "Flujo de programacion para principiantes"
     },
-    {
-      "badge": "css-developer",
-      "points": 3
+    "description": {
+        "us": "10 Mermaid-based flow exercises to practice core programming logic with isolated auto-evaluation and progressive difficulty.",
+        "es": "10 ejercicios de flujo basados en Mermaid para practicar la logica esencial de programacion con autoevaluacion aislada y dificultad progresiva."
     },
-    {
-      "badge": "seo-expert",
-      "points": 5
+    "preview": "",
+    "difficulty": "EASY",
+    "duration": 4,
+    "template_url": null,
+    "gitpod": true,
+    "technologies": [
+        "programming-logic",
+        "control-flow",
+        "Conditions",
+        "loops",
+        "flowcharts",
+        "mermaid"
+    ],
+    "projectType": "tutorial",
+    "editor": {
+        "agent": "vscode"
     },
-    {
-      "badge": "accessibility-expert",
-      "points": 5
-    },
-    {
-      "badge": "responsive-designer",
-      "points": 5
-    },
-    {
-      "badge": "performance-optimizer",
-      "points": 5
+    "grading": "incremental",
+    "localhostOnly": false,
+    "delivery": {
+        "instructions": "",
+        "formats": [
+            "no_delivery"
+        ],
+        "regex": ""
     }
-  ]
 }
