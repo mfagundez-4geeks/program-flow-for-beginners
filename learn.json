@@ -25,7 +25,7 @@
     "editor": {
         "agent": "vscode"
     },
-    "grading": "isolate",
+    "grading": "isolated",
     "localhostOnly": false,
     "delivery": {
         "instructions": "",
